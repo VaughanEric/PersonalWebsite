@@ -1,0 +1,876 @@
+/* Font Imports */
+
+@import url('https://fonts.googleapis.com/css2?family=Galada&display=swap');
+
+
+
+/* Header Styling */
+
+.header {
+    text-align: center;
+    height: 100vh;
+    background-color: #161616;
+    color: #acdeaa;
+}
+
+.greeting {
+    padding: 30vh 0;
+}
+
+.greeting h1 {
+    font-size: 5rem;
+    color: white;
+    font-family: 'Galada', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+/* Main Navbar Styling */
+
+#main-navbar {
+    bottom: 0;
+    width: 100vw;
+    background-color: #161616; 
+}
+
+.main-nav-links {
+    color: darkseagreen !important;
+    padding: .5rem 1.25rem !important;
+}
+
+.main-nav-links a:after {
+    content: '';
+    display: block;
+    margin: .75rem auto auto;
+    height: .1875rem;
+    width: 0;
+    background: transparent;
+    transition: width .5s ease, .5s ease;
+}
+.main-nav-links a:hover:after {
+    width: 100%;
+    background-color: white;
+}
+
+.main-nav-text {
+    color: darkseagreen !important;
+}
+
+
+
+/* Fixed Navbar Styling */
+
+#fixed-navbar {
+    visibility: hidden;
+    position: fixed;
+    padding: 0;
+    color: #5e8b6f;
+    z-index: 1;
+}
+
+#fixed-navbar button {
+    background-color: #acdeaa;
+    border: none;
+    padding: 0.25rem .5rem;
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+    z-index: 2;
+}
+
+#fixed-navbar .navbar-collapse {
+    transition: none !important;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    top: 0;
+    position: absolute;
+    top: 0;
+}
+
+#fixed-navbar .navbar-nav {
+    flex-direction: column;
+    padding-top: 20vh;
+}
+
+#fixed-navbar a {
+    color: #acdeaa;
+    height: 5rem;
+}
+
+
+
+/* Sub Navbar Styling */
+
+#sub-navbar {
+    top: 70vh;
+    width: 50vw;
+}
+
+.sub-nav-links {
+    padding: .5rem .5rem !important;
+    position: relative;
+}
+
+.sub-nav-links a:after {
+    content: '';
+    display: block;
+    margin: .75rem auto auto;
+    height: .1875rem;
+    width: 0;
+    background: transparent;
+    transition: width .5s ease, .5s ease;
+}
+
+.sub-nav-links a:hover:after {
+    width: 100%;
+}
+  
+.sub-nav-links a.active {
+    text-decoration: none;
+}
+
+
+
+/* Common Content Styling */
+
+.side-by-side {
+    height: 100vh;
+    width: 50vw;
+    float: left;
+    overflow-x: hidden;
+}
+
+.title {
+    position: relative;
+    top: 40vh;
+    font-size: 5rem;
+    font-family: 'Galada', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.right {
+    overflow-y: scroll;
+    line-height: 2;
+}
+
+.p-padding {
+    padding-bottom: 0.5rem;
+}
+
+/* About Styling */
+
+.about {
+    text-align: center;
+    height: auto !important;
+    color: #161616;
+}
+
+.about .title {
+    color: white;
+}
+
+.about-left {
+    background-color: #acdeaa;
+}
+
+.about-left .sub-nav-links {
+    color: #161616 !important;
+}
+
+.about-left .sub-nav-text {
+    color: #161616 !important;
+}
+
+.about .sub-nav-links a.active {
+    color: #161616;
+}
+
+.about .sub-nav-links a:hover:after {
+    background-color: white;
+}
+
+.about-right {
+    background-color: white;
+    padding: 4.5rem 4rem;
+    border-bottom: 1px solid #e4efe7;
+}
+
+.introduction {
+    text-align: left;
+}
+
+.about svg {
+    width: 70%;
+    padding: 2.25rem 0 3.25rem;  
+}
+
+.about-h3-padding {
+    margin: 0;
+    padding-bottom: 3.25rem;
+    text-align: left;
+}
+
+.basic-school-info, .extracurriculars, .service, .notable-courses, .awards {
+    color: #161616;
+}
+
+.quote {
+    color: #5e8b6f;
+    text-align: left;
+}
+
+.quote-padding {
+    padding-bottom: 2.25rem;
+}
+
+.about-list {
+    text-align: left;
+}
+
+.about li::marker {
+    content: "◊   ";
+    color: #acdeaa;
+}
+
+
+
+/* Education Styling */
+
+.education {
+    text-align: center;
+    height: 100vh;
+}
+
+.education-left {
+    background-color: white;
+    color: #5e8b6f;
+}
+
+.education-left .sub-nav-links {
+    color: #161616 !important;
+}
+
+.education-left .sub-nav-text {
+    color: #161616 !important;
+}
+
+.education .sub-nav-links a.active {
+    color: #161616 ;
+}
+
+.education .sub-nav-links a:hover:after {
+    background-color: #5e8b6f;
+}
+
+.education-right {
+    background-color: #e4efe7;
+    color: #5e8b6f;
+}
+
+hr {
+    border-top: 0.1vh solid white !important;
+    border-bottom: none;
+    margin: 0 auto !important;
+    width: 49.8vw;
+}
+
+.Collapsible__trigger .school {
+    cursor: pointer;
+    height: 49.95vh;
+    padding: 4.5rem 4rem 0;
+}
+
+.logo {
+    height: 25vh;
+    display: block;
+    margin: auto;
+}
+
+.education h3 {
+    display: block;
+}
+
+.Collapsible__contentOuter {
+    transition: .25s ease-out !important;
+}
+
+.open-collapsible-overflow {
+    overflow: visible !important;
+}
+
+#utk-content, #siegel-content {
+    background-color: white;
+    padding: 4.5rem 4rem;
+    border-left: 0.1vw solid #e4efe7;
+    border-right: 0.1vw solid #e4efe7;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+.education-h3-padding {
+    padding: 3.25rem 0 0.5rem;
+}
+
+.education ul {
+    margin-bottom: 0;
+}
+
+.education li::marker {
+    content: "◊   ";
+    color: #acdeaa;
+}
+
+.big-trigger {
+    position: relative;
+}
+
+#utk-option-icon, #siegel-option-icon {
+    position: absolute;
+    text-align: left;
+    bottom: 1rem;
+    left: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    overflow: visible;
+}
+
+.education svg {
+    width: 3vw;
+    height: 3vh;
+}
+
+.svg-turn-up {
+    transition: all 1000ms cubic-bezier(0, 1, 0, 1);
+    transform: rotateZ(-180deg);
+}
+
+.svg-turn-down {
+    transition: all 1000ms cubic-bezier(0, 1, 0, 1);
+    transform: rotateZ(180deg);
+}
+
+
+
+/* Skills Styling */
+
+.skills {
+    text-align: center;
+    height: 100vh;
+}
+
+.skills-left {
+    background-color: #5e8b6f;
+    color: white;
+}
+
+.skills-left .sub-nav-links {
+    color: white !important;
+}
+
+.skills-left .sub-nav-text {
+    color: white !important;
+}
+
+.skills .sub-nav-links a.active {
+    color: white ;
+}
+
+.skills .sub-nav-links a:hover:after {
+    background-color: #acdeaa;
+}
+
+.skills-right {
+    position: relative;
+    background-color: white;
+    color: #161616;
+    border-top: 1px solid #e4efe7;
+    padding: 4.5rem 4rem;
+}
+
+.skills-h3-languages, .skills-h3-hobbies {
+    color: #5e8b6f;
+    text-align: left;
+}
+
+.skills-h3-languages {
+    padding: 0 0 0.5rem;
+}
+
+.skills-h3-hobbies {
+    padding: 3.25rem 0 0.5rem;
+}
+
+table {
+    width: 100%;
+    max-width: 500px;
+}
+
+tr:hover {
+    background-color: #e4efe7;
+}
+
+tr:hover .star-icon{
+    transition: margin-left .25s ease-in-out;
+    margin-left: 0.25rem;
+}
+
+.star-icon {
+    font-size: 1rem;
+    margin-left: 0.1rem;
+}
+
+.td-left {
+    text-align: left;
+    padding-right: 15vw;
+}
+
+.td-right {
+    color: #5e8b6f;
+    text-align: right;
+    width: 6.5rem;
+}
+
+.hobbies {
+    text-align: left;
+}
+
+.hobbies ul {
+    margin-bottom: 0;
+}
+
+.skills li::marker {
+    content: "◊   ";
+    color: #acdeaa;
+}
+
+.udemy-courses {
+    margin: .5rem 0 .5rem 1.5rem;
+}
+
+.udemy-courses p {
+    margin-bottom: 0;
+}
+
+
+
+/* Projects Styling */
+
+.projects {
+    text-align: center;
+    height: 100vh;
+    color: #161616;
+}
+
+.projects-left {
+    background-color: white;
+}
+
+.projects-left .sub-nav-links {
+    color: #161616 !important;
+}
+
+.projects-left .sub-nav-text {
+    color: #161616 !important;
+}
+
+.projects .sub-nav-links a.active {
+    color: #161616;
+}
+
+.projects .sub-nav-links a:hover:after {
+    background-color: #acdeaa;
+}
+
+.projects-right {
+    position: relative;
+    background-color: #acdeaa;
+    padding: 4.5rem 4rem;
+    text-align: left;
+}
+
+.mips-header {
+    padding: 0 0 0.5rem;
+}
+
+.blast-off {
+    padding-bottom: 7rem;
+}
+
+.blast-off-header {
+    padding: 3.25rem 0 0.5rem;
+}
+
+.mips-link, .blast-off-link {
+    color: #5e8b6f;
+    text-decoration: underline;
+}
+
+.mips-link:hover, .blast-off-link:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.mips-info, .blast-off-info {
+    padding-left: 1.5rem;
+}
+
+.projects-footnote {
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    padding-bottom: 4.5rem;
+    padding-right: 4rem;
+    color: #5e8b6f;
+}
+
+
+
+/* Contact Styling */
+
+.contact {
+    text-align: center;
+    height: 100vh;
+}
+
+.contact-left {
+    background-color: #161616;
+    color: white;
+}
+
+.contact-left .sub-nav-links {
+    color: #acdeaa !important;
+}
+
+.contact-left .sub-nav-text {
+    color: #acdeaa !important;
+}
+
+.contact .sub-nav-links a.active {
+    color: #acdeaa;
+}
+
+.contact .sub-nav-links a:hover:after {
+    background-color: white;
+}
+
+.contact-right {
+    background-color: white;
+    padding: 4.5rem 4rem;
+    color: #161616;
+    text-align: left;
+    position: relative;
+}
+
+.contact-div {
+    padding-bottom: 7rem;
+}
+
+.contact-intro {
+    margin-bottom: 0;
+}
+
+.name-heading {
+    padding: 3.5rem 0 0.5rem;
+}
+
+.name-description {
+    margin-bottom: 0;
+}
+
+.contact-email {
+    color: #5e8b6f;
+    text-decoration: underline;
+}
+
+.contact-email:hover {
+    color: #acdeaa;
+    text-decoration: none;
+}
+
+.contact-footnote {
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    padding-bottom: 4.5rem;
+    padding-right: 4rem;
+    color: #5e8b6f;
+}
+
+
+
+/* Smaller Screen Media Styling */
+
+@media only screen and (max-width: 992px) {
+    
+    .webpage-body {
+        min-width: 450px;
+        overflow-x: hidden;
+    }
+
+    .header {
+        height: 100vh;
+    }
+
+    .side-by-side {
+        width: 100vw;
+    }
+
+    .main-nav-links {
+        padding: .5rem 1rem !important;
+    }
+
+    #fixed-navbar {
+        visibility: visible;
+    }
+
+    #main-navbar .navbar-nav {
+        flex-direction: row !important;
+    }
+
+    .about-left, .education-left, .skills-left, .projects-left, .contact-left {
+        overflow-y: hidden;
+        padding-left: 5rem;
+        padding-right: 5rem;
+        height: 100vh;
+    }
+
+    #sub-navbar {
+        margin: 0 auto;
+        visibility: hidden;
+    }
+
+    .right {
+        min-height: 100vh;
+    }
+
+    .about-right, .skills-right, .projects-right, .contact-right {
+        padding-left: 5rem;
+        padding-right: 5rem;
+        height: auto;
+    }
+
+    .education-left {
+        background-color: #acdeaa;
+    }
+
+    #utk-content, #siegel-content {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    hr {
+        width: 99.8vw;
+    }
+
+    .about-right {
+        border-bottom: none;
+    }
+
+    .projects-left {
+        background-color: #e4efe7;
+    }
+
+    .projects-footnote, .contact-footnote {
+        padding-right: 5rem;
+    }
+
+}
+
+@media (min-width: 0px) {
+
+    .navbar-expand-lg .navbar-collapse {
+        display: flex   !important;
+        flex-basis: auto !important;
+    }
+
+    #main-navbar button {
+        display: none;
+    }
+
+}
+
+
+
+/* iPhone Landscape Styling */
+
+@media only screen 
+    and (min-device-width: 375px) 
+    and (max-device-width: 812px)
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (orientation: landscape) {
+        
+        .header {
+            font-size: 1.5rem !important;
+            height: 100vh;
+        }
+
+        .greeting {
+            padding-bottom: 20vh;
+        }
+
+        #fixed-navbar .navbar-nav {
+            padding-top: 10vh;
+        }
+
+        body {
+            font-size: 1.25rem !important;
+        }
+
+        .about svg {
+            width: 50%;
+        }
+
+        .star-icon {
+            font-size: 1.25rem;
+        }
+
+        .td-right {
+            width: 8rem;
+        }
+
+}
+
+
+
+/* iPhone Portrait Styling */
+
+@media only screen 
+    and (min-device-width: 375px) 
+    and (max-device-width: 812px) 
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (orientation: portrait) { 
+
+        body {
+            font-size: 2.5rem !important;
+        }
+
+        h1, .title {
+            font-size: 8rem !important;
+        }
+
+        h3 {
+            font-size: 3.5rem !important;
+        }
+
+        .header h3 {
+            font-size: 3.5rem;
+        }
+
+        .navbar-toggler-icon {
+            height: 2.5rem !important;
+            width: 2.5rem !important;
+        }
+
+        #fixed-navbar a {
+            margin-bottom: 10rem !important;
+        }
+
+        .education-left {
+            background-color: #acdeaa;
+        }
+
+        .education svg {
+            height: 3.5rem;
+            width: 3.5rem;
+        }
+
+        #utk-option-icon, #siegel-option-icon {
+            bottom: 2rem;
+            left: 2rem;
+        }
+
+        .star-icon {
+            font-size: 2.5rem;
+        }
+
+        table {
+            width: 100%;
+            max-width: none;
+        }
+
+        .td-right {
+            width: 15rem;
+        }
+
+        .projects-left {
+            background-color: #e4efe7;
+        }
+
+        .contact-intro1 {
+            padding-bottom: 3.5rem;
+        }
+
+}
+
+
+
+/* iPad Pro Portrait Styling */
+
+@media only screen 
+    and (min-device-width: 1024px) 
+    and (max-device-width: 1024px) 
+    and (orientation: portrait) 
+    and (-webkit-min-device-pixel-ratio: 2) {
+
+        h1 {
+            font-size: 8rem !important;
+        }
+
+        .header h3 {
+            font-size: 3.5rem;
+        }
+
+        .header #main-navbar {
+            font-size: 2rem;
+        }
+
+        body {
+            font-size: 1.25rem !important;
+        }
+
+        .title {
+            font-size: 7rem;
+        }
+
+}
+
+
+
+/* iPad Pro Landscape Styling */
+
+@media only screen 
+    and (min-device-width: 1366px) 
+    and (max-device-width: 1366px) 
+    and (orientation: landscape) 
+    and (-webkit-min-device-pixel-ratio: 2) {
+
+        h1 {
+            font-size: 8rem !important;
+        }
+
+        .header h3 {
+            font-size: 3.5rem;
+        }
+
+        .header #main-navbar {
+            font-size: 2rem;
+        }
+
+        body {
+            font-size: 1.25rem !important;
+        }
+
+        .title {
+            font-size: 7rem;
+        }
+
+        .main-nav-links {
+            padding: .5rem 2rem !important;
+        }
+
+        .sub-nav-links {
+            padding: .5rem 1rem !important;
+        }
+
+}
+
+
