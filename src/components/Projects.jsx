@@ -22,7 +22,7 @@ function Projects() {
                 </div>
                 <div className="blast-off">
                     <h3 className="blast-off-header">
-                        <a className="blast-off-link" href="https://github.com/deanforrest/ef152project/tree/develop">Blast Off</a>
+                        <a className="blast-off-link" href="https://github.com/VaughanEric/EF152/tree/develop">Blast Off</a>
                     </h3>
                     <p className="blast-off-info">
                         This website, which resulted from a group project in my Engineering for Physics II course, contains a game intended to teach elementary school students about trajectory.
