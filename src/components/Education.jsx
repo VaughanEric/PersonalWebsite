@@ -28,6 +28,10 @@ function Education() {
         document.getElementById("utk-option-icon").style.transition = "transform 1000ms";
         document.getElementById("utk-option-icon").style.transform = "rotateX(0deg)";
         document.getElementById("utk-content").parentElement.parentElement.classList.remove("open-collapsible-overflow");
+
+        if (document.documentElement.clientWidth <= 992) {
+            document.getElementsByClassName("education-right")[0].scrollIntoView({behavior: "smooth", block: "start"})
+        }
     }
 
     const SiegelTriggerClosed = () =>
@@ -42,7 +46,11 @@ function Education() {
     function SiegelTurnUp() {
         document.getElementById("siegel-option-icon").style.transition = "transform 1000ms";
         document.getElementById("siegel-option-icon").style.transform = "rotateX(-180deg)";
-        document.getElementById("siegel-content").parentElement.parentElement.classList.add("open-collapsible-overflow");
+
+        if (document.documentElement.clientWidth > 992) {
+            document.getElementById("siegel-content").parentElement.parentElement.classList.add("open-collapsible-overflow");
+        }
+        
         document.getElementById("siegel-content").parentElement.parentElement.parentElement.scrollIntoView({behavior: "smooth", block: "start"});
     }
 
@@ -50,6 +58,10 @@ function Education() {
         document.getElementById("siegel-option-icon").style.transition = "transform 1000ms";
         document.getElementById("siegel-option-icon").style.transform = "rotateX(0deg)";
         document.getElementById("siegel-content").parentElement.parentElement.classList.remove("open-collapsible-overflow");
+
+        if (document.documentElement.clientWidth <= 992) {
+            document.getElementsByClassName("education-right")[0].scrollIntoView({behavior: "smooth", block: "start"})
+        }
     }
 
     return (
@@ -91,7 +103,7 @@ function Education() {
                                 <li>UTK Gardens (2021)</li>
                                 <li>UTK Trash Cleanup (2020)</li>
                                 <li>Odd Fellows Cemetery (2020)</li>
-                                <li>UTK Conoravirus Test Kits Assembly (2020)</li>
+                                <li>UTK Coronavirus Test Kits Assembly (2020)</li>
                             </ul>
                         </div>
                         <h3 className="education-h3-padding">Notable Courses From Freshman Year</h3>

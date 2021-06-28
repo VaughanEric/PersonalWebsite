@@ -264,6 +264,7 @@
 .education-right {
     background-color: #e4efe7;
     color: #5e8b6f;
+    overflow-y: scroll;
 }
 
 hr {
@@ -633,6 +634,10 @@ tr:hover .star-icon{
         height: 100vh;
     }
 
+    .education-left {
+        background-color: #acdeaa;
+    }
+
     #sub-navbar {
         margin: 0 auto;
         visibility: hidden;
@@ -648,8 +653,8 @@ tr:hover .star-icon{
         height: auto;
     }
 
-    .education-left {
-        background-color: #acdeaa;
+    .education-right {
+        height: auto;
     }
 
     #utk-content, #siegel-content {

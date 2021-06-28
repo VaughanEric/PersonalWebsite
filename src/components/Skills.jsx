@@ -22,9 +22,9 @@ function Skills() {
                             <td className="td-right">
                                 <BsStarFill className="star-icon" />
                                 <BsStarFill className="star-icon" />
-                                <BsStar className="star-icon" />
-                                <BsStar className="star-icon" />
-                                <BsStar className="star-icon" />
+                                <BsStarFill className="star-icon" />
+                                <BsStarFill className="star-icon" />
+                                <BsStarHalf className="star-icon" />
                             </td>
                         </tr>
                         <tr>
@@ -32,9 +32,9 @@ function Skills() {
                             <td className="td-right">
                                 <BsStarFill className="star-icon" />
                                 <BsStarFill className="star-icon" />
-                                <BsStar className="star-icon" />
-                                <BsStar className="star-icon" />
-                                <BsStar className="star-icon" />
+                                <BsStarFill className="star-icon" />
+                                <BsStarFill className="star-icon" />
+                                <BsStarHalf className="star-icon" />
                             </td>
                         </tr>
                         <tr>
@@ -42,18 +42,8 @@ function Skills() {
                             <td className="td-right">
                                 <BsStarFill className="star-icon" />
                                 <BsStarFill className="star-icon" />
-                                <BsStar className="star-icon" />
-                                <BsStar className="star-icon" />
-                                <BsStar className="star-icon" />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td className="td-left">Python</td>
-                            <td className="td-right">
                                 <BsStarFill className="star-icon" />
-                                <BsStarHalf className="star-icon" />
-                                <BsStar className="star-icon" />
-                                <BsStar className="star-icon" />
+                                <BsStarFill className="star-icon" />
                                 <BsStar className="star-icon" />
                             </td>
                         </tr>
@@ -61,8 +51,8 @@ function Skills() {
                             <td className="td-left">Bootstrap Framework</td>
                             <td className="td-right">
                                 <BsStarFill className="star-icon" />
-                                <BsStar className="star-icon" />
-                                <BsStar className="star-icon" />
+                                <BsStarFill className="star-icon" />
+                                <BsStarFill className="star-icon" />
                                 <BsStar className="star-icon" />
                                 <BsStar className="star-icon" />
                             </td>
@@ -71,8 +61,8 @@ function Skills() {
                             <td className="td-left">EJS/JS</td>
                             <td className="td-right">
                                 <BsStarFill className="star-icon" />
-                                <BsStar className="star-icon" />
-                                <BsStar className="star-icon" />
+                                <BsStarFill className="star-icon" />
+                                <BsStarFill className="star-icon" />
                                 <BsStar className="star-icon" />
                                 <BsStar className="star-icon" />
                             </td>
@@ -81,7 +71,17 @@ function Skills() {
                             <td className="td-left">React JSX</td>
                             <td className="td-right">
                                 <BsStarFill className="star-icon" />
+                                <BsStarFill className="star-icon" />
+                                <BsStarFill className="star-icon" />
                                 <BsStar className="star-icon" />
+                                <BsStar className="star-icon" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td className="td-left">Python</td>
+                            <td className="td-right">
+                                <BsStarFill className="star-icon" />
+                                <BsStarFill className="star-icon" />
                                 <BsStar className="star-icon" />
                                 <BsStar className="star-icon" />
                                 <BsStar className="star-icon" />
@@ -100,12 +100,12 @@ function Skills() {
                                 <li>2021 Complete Python Bootcamp From Zero to Hero in Python</li>
                             </ul>
                         </div>
-                        <li>Practing programming</li>
+                        <li>Practicing programming</li>
                         <li>Relaxing with family and friends</li>
                         <li>Playing and watching soccer</li>
                         <li>Watching Formula One</li>
                         <li>Golfing</li>
-                        <li>Practing piano</li>
+                        <li>Practicing piano</li>
                         <li>Playing table tennis</li>
                     </ul>
                 </div>
