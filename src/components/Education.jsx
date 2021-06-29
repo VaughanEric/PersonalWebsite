@@ -2,12 +2,15 @@ import React from "react";
 import SubNavbar from "./SubNavbar";
 import Collapsible from "react-collapsible";
 import { FaChevronDown } from "react-icons/fa";
+import smoothscroll from "smoothscroll-polyfill";
 
 function Education() {
 
     <head>
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
     </head>
+
+    smoothscroll.polyfill();
 
     const UtkTriggerClosed = () =>
         <div className="big-trigger">
@@ -28,10 +31,7 @@ function Education() {
         document.getElementById("utk-option-icon").style.transition = "transform 1000ms";
         document.getElementById("utk-option-icon").style.transform = "rotateX(0deg)";
         document.getElementById("utk-content").parentElement.parentElement.classList.remove("open-collapsible-overflow");
-
-        // if (document.documentElement.clientWidth <= 992) {
-        //     document.getElementsByClassName("education-right")[0].scrollIntoView({behavior: "smooth", block: "start"})
-        // }
+        document.getElementsByClassName("education-right")[0].scrollIntoView({behavior: "smooth", block: "start"})
     }
 
     const SiegelTriggerClosed = () =>
@@ -57,11 +57,12 @@ function Education() {
     function SiegelTurnDown() {
         document.getElementById("siegel-option-icon").style.transition = "transform 1000ms";
         document.getElementById("siegel-option-icon").style.transform = "rotateX(0deg)";
-        document.getElementById("siegel-content").parentElement.parentElement.classList.remove("open-collapsible-overflow");
+        
+        if (document.documentElement.clientWidth > 992) {
+            document.getElementById("siegel-content").parentElement.parentElement.classList.remove("open-collapsible-overflow");
+        }
 
-        // if (document.documentElement.clientWidth <= 992) {
-        //     document.getElementsByClassName("education-right")[0].scrollIntoView({behavior: "smooth", block: "start"})
-        // }
+        document.getElementsByClassName("education-right")[0].scrollIntoView({behavior: "smooth", block: "start"})
     }
 
     return (
