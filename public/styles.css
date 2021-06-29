@@ -645,16 +645,15 @@ tr:hover .star-icon{
 
     .right {
         min-height: 100vh;
+        height: auto !important;
     }
 
     .about-right, .skills-right, .projects-right, .contact-right {
         padding-left: 5rem;
         padding-right: 5rem;
-        height: auto;
     }
 
     .right.education-right {
-        height: auto !important;
         overflow-y: hidden !important;
     }
 
