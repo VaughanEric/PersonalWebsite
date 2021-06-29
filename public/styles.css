@@ -655,7 +655,7 @@ tr:hover .star-icon{
 
     .education-right {
         height: auto;
-        overflow-y: hidden;
+        overflow-y: hidden !important;
     }
 
     #utk-content, #siegel-content {
