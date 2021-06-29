@@ -21,17 +21,17 @@ function Education() {
             <FaChevronDown id="utk-option-icon" /> 
         </div>;
 
-    function UtkTurnUp() {
+    function UtkOpening() {
         document.getElementById("utk-option-icon").style.transition = "transform 1000ms";
         document.getElementById("utk-option-icon").style.transform = "rotateX(-180deg)";
         document.getElementById("utk-content").parentElement.parentElement.parentElement.scrollIntoView({behavior: "smooth", block: "start"});
     }
 
-    function UtkTurnDown() {
+    function UtkClosing() {
         document.getElementById("utk-option-icon").style.transition = "transform 1000ms";
         document.getElementById("utk-option-icon").style.transform = "rotateX(0deg)";
         document.getElementById("utk-content").parentElement.parentElement.classList.remove("open-collapsible-overflow");
-        document.getElementsByClassName("education-right")[0].scrollIntoView({behavior: "smooth", block: "start"})
+        document.getElementsByClassName("education-right")[0].scrollIntoView({behavior: "smooth", block: "start"});
     }
 
     const SiegelTriggerClosed = () =>
@@ -43,7 +43,7 @@ function Education() {
             <FaChevronDown id="siegel-option-icon" />
         </div>;
 
-    function SiegelTurnUp() {
+    function SiegelOpening() {
         document.getElementById("siegel-option-icon").style.transition = "transform 1000ms";
         document.getElementById("siegel-option-icon").style.transform = "rotateX(-180deg)";
 
@@ -54,7 +54,7 @@ function Education() {
         document.getElementById("siegel-content").parentElement.parentElement.parentElement.scrollIntoView({behavior: "smooth", block: "start"});
     }
 
-    function SiegelTurnDown() {
+    function SiegelClosing() {
         document.getElementById("siegel-option-icon").style.transition = "transform 1000ms";
         document.getElementById("siegel-option-icon").style.transform = "rotateX(0deg)";
         
@@ -62,7 +62,7 @@ function Education() {
             document.getElementById("siegel-content").parentElement.parentElement.classList.remove("open-collapsible-overflow");
         }
 
-        document.getElementsByClassName("education-right")[0].scrollIntoView({behavior: "smooth", block: "start"})
+        document.getElementsByClassName("big-trigger")[1].scrollIntoView({behavior: "smooth", block: "end"});
     }
 
     return (
@@ -76,8 +76,8 @@ function Education() {
             <div className="side-by-side education-right right">
                 <Collapsible 
                     trigger={<UtkTriggerClosed />} 
-                    onOpening={UtkTurnUp}
-                    onClosing={UtkTurnDown}
+                    onOpening={UtkOpening}
+                    onClosing={UtkClosing}
                     transitionTime={1000}
                 >
                     <div id="utk-content" >
@@ -121,8 +121,8 @@ function Education() {
                 <hr /> 
                 <Collapsible 
                     trigger={<SiegelTriggerClosed />} 
-                    onOpening={SiegelTurnUp}
-                    onClosing={SiegelTurnDown}
+                    onOpening={SiegelOpening}
+                    onClosing={SiegelClosing}
                     transitionTime={1000}
                 >
                     <div id="siegel-content">
