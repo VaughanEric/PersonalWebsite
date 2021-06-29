@@ -645,7 +645,7 @@ tr:hover .star-icon{
 
     .right {
         min-height: 100vh;
-        height: auto !important;
+        height: auto !important; 
     }
 
     .about-right, .skills-right, .projects-right, .contact-right {
