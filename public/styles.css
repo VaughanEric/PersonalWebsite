@@ -653,10 +653,12 @@ tr:hover .star-icon{
         height: auto;
     }
 
-    .education-right {
+    .right.education-right {
         height: auto !important;
         overflow-y: hidden !important;
     }
+
+    .right.education-right
 
     #utk-content, #siegel-content {
         padding-left: 5rem;
