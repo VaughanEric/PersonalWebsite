@@ -24,7 +24,10 @@ function Education() {
     function UtkOpening() {
         document.getElementById("utk-option-icon").style.transition = "transform 1000ms";
         document.getElementById("utk-option-icon").style.transform = "rotateX(-180deg)";
-        document.getElementById("utk-content").parentElement.parentElement.parentElement.scrollIntoView({behavior: "smooth", block: "start"});
+        
+        setTimeout( function() {
+            document.getElementById("utk-content").parentElement.parentElement.parentElement.scrollIntoView({behavior: "smooth", block: "start"});
+        }, 100);
     }
 
     function UtkClosing() {
@@ -54,7 +57,9 @@ function Education() {
             document.getElementById("siegel-content").parentElement.parentElement.classList.add("open-collapsible-overflow");
         }
         
-        document.getElementById("siegel-content").parentElement.parentElement.parentElement.scrollIntoView({behavior: "smooth", block: "start"});
+        setTimeout( function() {
+            document.getElementById("siegel-content").parentElement.parentElement.parentElement.scrollIntoView({behavior: "smooth", block: "start"});
+        }, 100);
     }
 
     function SiegelClosing() {
