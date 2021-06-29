@@ -31,7 +31,10 @@ function Education() {
         document.getElementById("utk-option-icon").style.transition = "transform 1000ms";
         document.getElementById("utk-option-icon").style.transform = "rotateX(0deg)";
         document.getElementById("utk-content").parentElement.parentElement.classList.remove("open-collapsible-overflow");
-        document.getElementsByClassName("education-right")[0].scrollIntoView({behavior: "smooth", block: "start"});
+        
+        if (document.documentElement.clientWidth < 992) {
+            document.getElementsByClassName("education-right")[0].scrollIntoView({behavior: "smooth", block: "start"});
+        }
     }
 
     const SiegelTriggerClosed = () =>
@@ -62,7 +65,9 @@ function Education() {
             document.getElementById("siegel-content").parentElement.parentElement.classList.remove("open-collapsible-overflow");
         }
 
-        document.getElementsByClassName("big-trigger")[1].scrollIntoView({behavior: "smooth", block: "end"});
+        else {
+            document.getElementsByClassName("big-trigger")[1].scrollIntoView({behavior: "smooth", block: "end"});
+        }
     }
 
     return (
