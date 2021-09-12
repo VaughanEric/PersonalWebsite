@@ -29,6 +29,24 @@ function Projects() {
                         I was responsible for the website design and development (not including the game).
                     </p>
                 </div>
+                <div className="f1-frontend">
+                    <h3 className="f1-frontend-header">
+                        <a className="f1-frontend-link" href="https://github.com/VaughanEric/F1FantasyFrontend">F1 Fantasy Data Tracker Frontend</a>
+                    </h3>
+                    <p className="f1-frontend-info">
+                        This is the frontend of my F1 Fantasy Data Tracking website.
+                        The frontend is responsible for the graphs as well as the other design features.
+                    </p>
+                </div>
+                <div className="f1-backend">
+                    <h3 className="f1-backend-header">
+                        <a className="f1-backend-link" href="https://github.com/VaughanEric/F1FantasyBackend">F1 Fantasy Data Tracker Backend</a>
+                    </h3>
+                    <p className="f1-backend-info">
+                        This is the backend of my F1 Fantasy Data Tracking website.
+                        The backend is responsible for storing user input into my database and retrieving the data for my graphs from my database and an outside API.
+                    </p>
+                </div>
                 <p className="projects-footnote">
                     * The names of the projects are linked to their respective GitHub repository.
                 </p>

@@ -30,7 +30,7 @@
 #main-navbar {
     bottom: 0;
     width: 100vw;
-    background-color: #161616; 
+    background-color: #161616;
 }
 
 .main-nav-links {
@@ -124,7 +124,7 @@
 .sub-nav-links a:hover:after {
     width: 100%;
 }
-  
+
 .sub-nav-links a.active {
     text-decoration: none;
 }
@@ -200,7 +200,7 @@
 
 .about svg {
     width: 70%;
-    padding: 2.25rem 0 3.25rem;  
+    padding: 2.25rem 0 3.25rem;
 }
 
 .about-h3-padding {
@@ -492,33 +492,31 @@ tr:hover .star-icon{
     padding: 0 0 0.5rem;
 }
 
-.blast-off {
-    padding-bottom: 7rem;
-}
-
-.blast-off-header {
+.blast-off-header, .f1-frontend-header, .f1-backend-header {
     padding: 3.25rem 0 0.5rem;
 }
 
-.mips-link, .blast-off-link {
+.mips-link, .blast-off-link, .f1-frontend-link, .f1-backend-link {
     color: #5e8b6f;
     text-decoration: underline;
 }
 
-.mips-link:hover, .blast-off-link:hover {
+.mips-link:hover, .blast-off-link:hover, .f1-frontend-link:hover, .f1-backend-link:hover {
     color: white;
     text-decoration: none;
 }
 
-.mips-info, .blast-off-info {
+.mips-info, .blast-off-info, .f1-frontend-info, .f1-backend-info {
     padding-left: 1.5rem;
 }
 
+.f1-backend {
+    padding-bottom: 3.25rem;
+}
+
 .projects-footnote {
-    position: absolute;
     bottom: 0;
     margin: 0;
-    padding-bottom: 4.5rem;
     padding-right: 4rem;
     color: #5e8b6f;
 }
@@ -601,7 +599,7 @@ tr:hover .star-icon{
 /* Smaller Screen Media Styling */
 
 @media only screen and (max-width: 992px) {
-    
+
     .webpage-body {
         min-width: 450px;
         overflow-x: hidden;
@@ -645,7 +643,7 @@ tr:hover .star-icon{
 
     .right {
         min-height: 100vh;
-        height: auto !important; 
+        height: auto !important;
     }
 
     .about-right, .skills-right, .projects-right, .contact-right {
@@ -699,12 +697,12 @@ tr:hover .star-icon{
 
 /* iPhone Landscape Styling */
 
-@media only screen 
-    and (min-device-width: 375px) 
+@media only screen
+    and (min-device-width: 375px)
     and (max-device-width: 812px)
     and (-webkit-min-device-pixel-ratio: 2)
     and (orientation: landscape) {
-        
+
         .header {
             font-size: 1.5rem !important;
             height: 100vh;
@@ -740,11 +738,11 @@ tr:hover .star-icon{
 
 /* iPhone Portrait Styling */
 
-@media only screen 
-    and (min-device-width: 375px) 
-    and (max-device-width: 812px) 
+@media only screen
+    and (min-device-width: 375px)
+    and (max-device-width: 812px)
     and (-webkit-min-device-pixel-ratio: 2)
-    and (orientation: portrait) { 
+    and (orientation: portrait) {
 
         body {
             font-size: 2.5rem !important;
@@ -812,10 +810,10 @@ tr:hover .star-icon{
 
 /* iPad Pro Portrait Styling */
 
-@media only screen 
-    and (min-device-width: 1024px) 
-    and (max-device-width: 1024px) 
-    and (orientation: portrait) 
+@media only screen
+    and (min-device-width: 1024px)
+    and (max-device-width: 1024px)
+    and (orientation: portrait)
     and (-webkit-min-device-pixel-ratio: 2) {
 
         h1 {
@@ -844,10 +842,10 @@ tr:hover .star-icon{
 
 /* iPad Pro Landscape Styling */
 
-@media only screen 
-    and (min-device-width: 1366px) 
-    and (max-device-width: 1366px) 
-    and (orientation: landscape) 
+@media only screen
+    and (min-device-width: 1366px)
+    and (max-device-width: 1366px)
+    and (orientation: landscape)
     and (-webkit-min-device-pixel-ratio: 2) {
 
         h1 {
@@ -879,5 +877,3 @@ tr:hover .star-icon{
         }
 
 }
-
-

@@ -103,7 +103,13 @@ function Skills() {
                         <li>Practicing programming</li>
                         <li>Relaxing with family and friends</li>
                         <li>Playing and watching soccer</li>
+                        <ul>
+                            <li>Manchester United supporter</li>
+                        </ul>
                         <li>Watching Formula One</li>
+                        <ul>
+                            <li>McLaren Racing supporter</li>
+                        </ul>
                         <li>Golfing</li>
                         <li>Practicing piano</li>
                         <li>Playing table tennis</li>
