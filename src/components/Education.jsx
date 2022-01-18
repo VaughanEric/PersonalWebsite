@@ -103,13 +103,16 @@ function Education() {
                         <div className="extracurriculars">
                             <ul>
                                 <li>Chancellor's Honors College</li>
-                                <li>UTK Collegiate Entrepreneurs Organization</li>
+                                <li>Hack4Impact UTK</li>
+                                <li>UTK Collegiate Entrepreneurs' Organization</li>
+                                <li>UTK Roundnet</li>
                                 <li>Intramural Table Tennis</li>
                             </ul>
                         </div>
                         <h3 className="education-h3-padding">Service</h3>
                         <div className="service">
                             <ul>
+                                <li>Raising a Voice (2021)</li>
                                 <li>Knoxville Area Rescue Mission (2021)</li>
                                 <li>UTK Gardens (2021)</li>
                                 <li>UTK Trash Cleanup (2020)</li>
@@ -117,13 +120,14 @@ function Education() {
                                 <li>UTK Coronavirus Test Kits Assembly (2020)</li>
                             </ul>
                         </div>
-                        <h3 className="education-h3-padding">Notable Courses From Freshman Year</h3>
+                        <h3 className="education-h3-padding">Notable Courses</h3>
                         <div className="notable-courses">
                             <ul>
-                                <li>Computer Science 230 - Computer Organization</li>
-                                <li>Engineering Fundamentals 152 - Physics for Engineers II</li>
-                                <li>English 298 - Chancellor's Honors Writing II</li>
-                                <li>Mathematics 251 - Matrix Algebra I</li>
+                                <li>Computer Organization</li>
+                                <li>Data Structures and Algorithms I</li>
+                                <li>Introduction to Computer Science</li>
+                                <li>Matrix Algebra I</li>
+                                <li>Probability and Random Variables</li>
                             </ul>
                         </div>
                     </div>

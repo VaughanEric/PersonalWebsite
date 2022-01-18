@@ -18,16 +18,6 @@ function Skills() {
                     <h3 className="skills-h3-languages">Programming Languages</h3>
                     <table>
                         <tr>
-                            <td className="td-left">CSS</td>
-                            <td className="td-right">
-                                <BsStarFill className="star-icon" />
-                                <BsStarFill className="star-icon" />
-                                <BsStarFill className="star-icon" />
-                                <BsStarFill className="star-icon" />
-                                <BsStarHalf className="star-icon" />
-                            </td>
-                        </tr>
-                        <tr>
                             <td className="td-left">C++</td>
                             <td className="td-right">
                                 <BsStarFill className="star-icon" />
@@ -38,13 +28,23 @@ function Skills() {
                             </td>
                         </tr>
                         <tr>
-                            <td className="td-left">HTML</td>
+                            <td className="td-left">HTML / CSS</td>
                             <td className="td-right">
                                 <BsStarFill className="star-icon" />
                                 <BsStarFill className="star-icon" />
                                 <BsStarFill className="star-icon" />
                                 <BsStarFill className="star-icon" />
-                                <BsStar className="star-icon" />
+                                <BsStarHalf className="star-icon" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td className="td-left">React</td>
+                            <td className="td-right">
+                                <BsStarFill className="star-icon" />
+                                <BsStarFill className="star-icon" />
+                                <BsStarFill className="star-icon" />
+                                <BsStarFill className="star-icon" />
+                                <BsStarHalf className="star-icon" />
                             </td>
                         </tr>
                         <tr>
@@ -53,12 +53,22 @@ function Skills() {
                                 <BsStarFill className="star-icon" />
                                 <BsStarFill className="star-icon" />
                                 <BsStarFill className="star-icon" />
-                                <BsStar className="star-icon" />
+                                <BsStarHalf className="star-icon" />
                                 <BsStar className="star-icon" />
                             </td>
                         </tr>
                         <tr>
-                            <td className="td-left">EJS/JS</td>
+                            <td className="td-left">JavaScript</td>
+                            <td className="td-right">
+                                <BsStarFill className="star-icon" />
+                                <BsStarFill className="star-icon" />
+                                <BsStarFill className="star-icon" />
+                                <BsStarHalf className="star-icon" />
+                                <BsStar className="star-icon" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td className="td-left">Angular</td>
                             <td className="td-right">
                                 <BsStarFill className="star-icon" />
                                 <BsStarFill className="star-icon" />
@@ -68,7 +78,17 @@ function Skills() {
                             </td>
                         </tr>
                         <tr>
-                            <td className="td-left">React JSX</td>
+                            <td className="td-left">MongoDB / Mongoose</td>
+                            <td className="td-right">
+                                <BsStarFill className="star-icon" />
+                                <BsStarFill className="star-icon" />
+                                <BsStarFill className="star-icon" />
+                                <BsStar className="star-icon" />
+                                <BsStar className="star-icon" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td className="td-left">Node.js / Express.js</td>
                             <td className="td-right">
                                 <BsStarFill className="star-icon" />
                                 <BsStarFill className="star-icon" />
@@ -92,7 +112,7 @@ function Skills() {
                 <div className="hobbies">
                     <h3 className="skills-h3-hobbies">Hobbies</h3>
                     <ul>
-                        <li>Continually learning through taking Udemy courses</li>
+                        <li>Continually learning through Udemy courses</li>
                         <div className="udemy-courses">
                             <p>Completed Courses:</p>
                             <ul>
