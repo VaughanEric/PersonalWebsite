@@ -19,7 +19,7 @@ function Contact() {
                     <p className="name-description">Undergraduate Programmer and Web Developer</p>
                     <a className="contact-email" href="mailto:hello.ericvaughan@gmail.com">hello.ericvaughan@gmail.com</a>
                 </div>
-                <p className="contact-footnote">Site by Eric Vaughan (Updated as of June 2021)</p>
+                <p className="contact-footnote">Site by Eric Vaughan (Updated as of January 2022)</p>
             </div>   
         </div>
     );
